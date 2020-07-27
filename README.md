@@ -20,7 +20,7 @@
 
 
 ## Set up MySQL
-Projeyi indirdikten sonra  [application.properties]application.properties dosyasını düzenlemeniz gerekiyor.
+Projeyi indirdikten sonra  [application.properties](https://github.com/kbryldrm1673/CreditApplication/blob/master/springboot-credit-app/src/main/resources/application.properties) dosyasını düzenlemeniz gerekiyor.
 
 
 
