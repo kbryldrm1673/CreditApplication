@@ -29,7 +29,7 @@ Projeyi indirdikten sonra  [application.properties](https://github.com/kbryldrm1
 
 
 ## Viewing the running application
-Projeyi çalıştırdıktan sonra tarayıcınız üzerinden **http://localhost:8080** adresini ziyaret ediniz. 
+Projeyi çalıştırdıktan sonra tarayıcınız üzerinden [http://localhost:8080](http://localhost:8080) adresini ziyaret ediniz. 
 
 ## Authors
 * Kübra Yıldırım 
