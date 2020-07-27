@@ -1,4 +1,28 @@
 # CreditApplication
-Spring Boot, Spring Security,Thymeleaf, Hibernate , PostgreSQL ,Login and Register
 
-# Getting Started
+## Getting Started
+
+
+## Requirements
+
+
+## Technology stack
+* Spring Boot
+* Spring Security
+* Thymeleaf
+* Hibernate
+* PostreSQL
+
+
+
+## Set up MySQL
+
+
+## Running the project
+
+
+## Viewing the running application
+
+## Authors
+
+## License
