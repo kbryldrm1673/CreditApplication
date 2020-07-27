@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.credit.sprinboot.web.dto.AdminRegistrationDTO;
 import com.credit.springboot.service.AdminService;
+import com.credit.springboot.web.dto.AdminRegistrationDTO;
 
 @Controller
 @RequestMapping("/registration")

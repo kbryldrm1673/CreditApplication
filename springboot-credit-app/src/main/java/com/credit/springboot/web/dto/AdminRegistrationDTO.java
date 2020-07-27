@@ -1,4 +1,4 @@
-package com.credit.sprinboot.web.dto;
+package com.credit.springboot.web.dto;
 
 public class AdminRegistrationDTO {
 

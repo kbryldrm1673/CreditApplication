@@ -12,10 +12,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.credit.sprinboot.web.dto.AdminRegistrationDTO;
 import com.credit.springboot.model.Admin;
 import com.credit.springboot.model.Role;
 import com.credit.springboot.repository.AdminRepository;
+import com.credit.springboot.web.dto.AdminRegistrationDTO;
 
 @Service
 public class AdninServiceImpl implements AdminService {
