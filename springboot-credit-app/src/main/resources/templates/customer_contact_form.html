@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thmeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Customer Contact Information</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-md-8 mx-auto">
+				<div class="container">
+					<h3>İletişim Bilgileri</h3>
+					<form>
+
+						<form action="#" th:action="@{/saveContact}"
+							th:object="${contact}" method="POST">
+
+
+							<div class="form-row">
+								<div class="col-md-4 form-group">
+									<label>İl * </label> <select class="form-control"
+										th:field="*{il}">
+										<option value="">Seçiniz..</option>
+										<option value="İstanbul">İstanbul</option>
+									</select>
+								</div>
+
+								<div class="col-md-4 form-group">
+									<label>İlçe * </label> <select class="form-control"
+										th:field="*{ilce}">
+										<option value="">Seçiniz..</option>
+										<option value="Ümraniye">Ümraniye</option>
+									</select>
+								</div>
+
+
+							</div>
+
+							<label>Ev Adresi *</label><br>
+							<textarea type="text" th:field="*{evAdres}"
+								placeholder="Ev Adresi" class="form-control mb-8 col-8"></textarea>
+							<label>Eviniz kime ait?</label>
+							<div class="col-md-11 mx-auto">
+								<div class="form-row">
+									<div class="col-md-2 form-group">
+										<input class="form-check-input" type="radio"
+											th:field="*{evKimin}" id="option1" value=Kendisi> <label
+											class="form-check-label" for="option1">Kendisi</label>
+									</div>
+									<div class="col-md-2 form-group">
+										<input class="form-check-input" type="radio"
+											th:field="*{evKimin}" id="option2" value=Kira> <label
+											class="form-check-label" for="option2">Kira</label>
+									</div>
+									<div class="col-md-2 form-group">
+										<input class="form-check-input" type="radio"
+											th:field="*{evKimin}" id="option2" value=Aile> <label
+											class="form-check-label" for="option2">Aile
+											Fertleri-Diğer</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-4 form-group">
+									<label>Çalışma Şekli * </label> <select class="form-control"
+										th:field="*{calısmaSekli}">
+										<option value="">Seçiniz..</option>
+										<option value="Ofis">Ofis</option>
+										<option value="Uzaktan">Uzaktan</option>
+									</select>
+								</div>
+
+								<div class="col-md-4 form-group">
+									<label>Meslek * </label> <select class="form-control"
+										th:field="*{meslek}">
+										<option value="">Seçiniz..</option>
+										<option value="Doktor">Doktor</option>
+										<option value="Mühendis">Mühendis</option>
+										<option value="Öğretmen">Öğretmen</option>
+									</select>
+								</div>
+							</div>
+
+
+							<div class="form-row">
+								<div class="col-md-4 form-group">
+									<label>Vergi Dairesi*</label> <input type="text"
+										placeholder="Vergi Dairesi" class="form-control"
+										th:field="*{vergiDairesi}">
+								</div>
+
+								<div class="col-md-4 form-group">
+									<label>Vergi Numarası*</label> <input type="text"
+										placeholder="Vergi Numarası" class="form-control"
+										th:field="*{vergiNumarasi}">
+								</div>
+							</div>
+
+
+							<div>
+								<label>İş Yeri Ünvanı*</label> <input type="text"
+									placeholder="İş Yeri Ünvanı" class="form-control mb-8 col-8"
+									th:field="*{isYeriUnvani}">
+							</div>
+
+							<div class="form-row">
+								<div class="col-md-4 form-group">
+									<label>İl * </label> <select class="form-control"
+										th:field="*{isYeriIl}">
+										<option value="">Seçiniz..</option>
+										<option value="Ankara">Ankara</option>
+									</select>
+								</div>
+
+								<div class="col-md-4 form-group">
+									<label>İlçe * </label> <select class="form-control"
+										th:field="*{isYeriIlce}">
+										<option value="">Seçiniz..</option>
+										<option value="Kızılay">Kızılay</option>
+									</select>
+								</div>
+							</div>
+
+
+
+							<div>
+								<label>İş Yeri Adresi*</label>
+								<textarea type="text" placeholder="İş Yeri Adresi"
+									class="form-control mb-8 col-8" th:field="*{isYeriAdres}"></textarea>
+							</div>
+
+							<div>
+								<label>İş Telefonu*</label> <input type="tel"
+									placeholder="İş Yeri Teleofonu" class="form-control mb-8 col-8"
+									th:field="*{isTelefon}">
+							</div>
+
+							<div>
+								<label>Aylık Gelir*</label> <input type="number"
+									placeholder="Aylık Geliriniz.." class="form-control mb-8 col-8"
+									th:field="*{isTelefon}">
+							</div>
+
+						</form>
+
+
+						<div class="form-group">
+							<div class="row">
+
+
+
+								<div class="col-sm-2 col-sm-offset-3">
+									<a href="/" th:href="@{/customerPersonalInformationForm}"
+										class="btn btn-success" type="submit">Geri</a>
+								</div>
+
+
+								<div class="row">
+									<div class="col-sm-8 col-sm-offset-3">
+										<a href="/" class="btn btn-success" type="submit">Kaydet</a>
+									</div>
+								</div>
+
+
+
+							</div>
+
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
