@@ -20,7 +20,8 @@
 
 
 ## Set up MySQL
-Projeyi indirdikten sonra  application.properties dosyasını düzenlemeniz gerekiyor.
+Projeyi indirdikten sonra  [application.properties]application.properties dosyasını düzenlemeniz gerekiyor.
+
 
 
 ## Running the project
