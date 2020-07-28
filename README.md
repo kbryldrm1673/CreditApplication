@@ -25,4 +25,4 @@ Projeyi çalıştırdıktan sonra tarayıcınız üzerinden [http://localhost:80
 * Kübra Yıldırım 
 
 ## License
-Bu proje MIT lisansı ile lisanslanmıştır.
+Bu proje MIT lisansı ile lisanslanmıştır. [LICENSE](https://github.com/kbryldrm1673/CreditApplication/blob/master/LICENSE)
