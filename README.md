@@ -3,7 +3,9 @@
 ## Requirements
 * JDK 1.8
 * Maven 3
-
+ Proje çalışma ortamı Eclipse ve JDK kurulumuna [buradan](https://github.com/kbryldrm1673/Document/blob/master/Windows%20JDK%208%20Eclipse%20Kurulumu.pdf)
+ ulaşabilirsiniz.
+  
 ## Technology stack
 * Spring Boot
 * Spring Data Jpa
