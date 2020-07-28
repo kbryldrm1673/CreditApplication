@@ -1,10 +1,8 @@
 # Credit Application
 
-## Getting Started
-
-
 ## Requirements
-
+* JDK 1.8
+* Maven 3
 
 ## Technology stack
 * Spring Boot
@@ -17,16 +15,8 @@
 * jQuery
 * Bootstrap
 
-
-
 ## Set up MySQL
 Projeyi indirdikten sonra  [application.properties](https://github.com/kbryldrm1673/CreditApplication/blob/master/springboot-credit-app/src/main/resources/application.properties) dosyasını düzenlemeniz gerekiyor.
-
-
-
-## Running the project
-
-
 
 ## Viewing the running application
 Projeyi çalıştırdıktan sonra tarayıcınız üzerinden [http://localhost:8080](http://localhost:8080) adresini ziyaret ediniz. 
